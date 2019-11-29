@@ -1,0 +1,84 @@
+.debug {
+  border: solid 1px #cecbff;
+}
+.header-title {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+nav {
+  padding: 10px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #6c6c6c;
+}
+a {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.2s;
+}
+a:hover {
+  color: #afafaf;
+  text-decoration: underline;
+}
+.base-section {
+  margin-top: 20px;
+}
+.post {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.post:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.post-number {
+  color: #7e48de;
+}
+.post-info {
+  margin-bottom: 10px;
+  color: #afafaf;
+}
+.post-info2 {
+  color: #afafaf;
+  text-align: right;
+}
+.post-info3 {
+  color: #afafaf;
+  text-align: right;
+}
+.tar {
+  text-align: right;
+}
+.tac {
+  text-align: center;
+}
+.tal {
+  text-align: left;
+}
+.card-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-content {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mt12 {
+  margin-top: 12px;
+}
+.point-color {
+  color: #ae9eff;
+}
+.point-color-b {
+  color: #ae9eff;
+  font-weight: bold;
+}
+.bg-ffffff {
+  background: #ffffff;
+}

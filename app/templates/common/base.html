@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JPM | 日本の記事を読んで勉強しよう</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/static/app/img/favicon/fuji.png">
+  <link rel="stylesheet" href="/static/app/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/app/css/style.css">
+  {% block css %}
+  {% endblock %}
+</head>
+<body>
+  <header class="sticky-top bg-ffffff">
+    <nav class="shadow">
+      <div class="header-title">
+        <b>J</b>apan <b>P</b>ost <b>M</b>emory
+      </div>
+      <ul class="nav justify-content-center nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">リスト</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">登録</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ヒストリー</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="base-section">
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </section>
+</body>
+<script src="/static/app/vendor/jquery/jquery.min.js"></script>
+<script src="/static/app/vendor/bootstrap/bootstrap.min.js"></script>
+{% block js %}
+{% endblock %}
+</html>

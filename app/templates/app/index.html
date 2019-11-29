@@ -1,1 +1,59 @@
-<h1>hello world</h1>
+{% extends "../common/base.html" %}
+
+{% block css %}
+{% endblock %}
+
+{% block content %}
+  {% for n in post %}
+  <div class="card post">
+    <div class="card-body">
+      <div class="post-info">
+        <div>番号 <span class='point-color-b'>3</span></div>
+      </div>
+      <h5 class="card-title">安倍首相「中曽根元首相は我が国の国際的地位を大きく向上させた」　死去でコメント</h5>
+      <div class="card-content">安倍晋三首相は29日、中曽根康弘元首相の死去を受け、コメントを発表した。コメントは以下の通り。</div>
+      <div class="post-info2 mt12">
+        <div>知らない漢字 <span class='point-color-b'>10</span></div>
+      </div>
+      <div class="post-info3">
+        <div>登録日 <span class='point-color'>2019-11-12 14:25:33</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card post">
+    <div class="card-body">
+      <div class="post-info">
+        <div>番号 <span class='point-color-b'>2</span></div>
+      </div>
+      <h5 class="card-title">Twitterが「休眠アカウント」削除、保留を発表。「故人のアカウントを追悼できる方法が見つかるまで、削除は行いません」</h5>
+      <div class="card-content">米Twitterは11月28日（日本時間）、長期間ログインしていない休眠アカウントを削除するという方針を一旦保留することを発表した。</div>
+      <div class="post-info2 mt12">
+        <div>知らない漢字 <span class='point-color-b'>10</span></div>
+      </div>
+      <div class="post-info3">
+        <div>登録日 <span class='point-color'>2019-11-12 14:25:33</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card post">
+    <div class="card-body">
+      <div class="post-info">
+        <div>番号 <span class='point-color-b'>1</span></div>
+      </div>
+      <h5 class="card-title">ＮＨＫ、同時配信などネット費用大幅削減へ　総務省要請</h5>
+      <div class="card-content">ＮＨＫが、番組を放送と同時にインターネットに常に流す「常時同時配信」を含むネット業務全体の費用を大幅に削減する方針を固めた</div>
+      <div class="post-info2 mt12">
+        <div>知らない漢字 <span class='point-color-b'>10</span></div>
+      </div>
+      <div class="post-info3">
+        <div>登録日 <span class='point-color'>2019-11-12 14:25:33</span></div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
