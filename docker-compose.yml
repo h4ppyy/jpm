@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  mysql:
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_general_ci
+    container_name: jpm.mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "0000"
+      MYSQL_DATABASE: "jpm"
+      MYSQL_USER: "jpm"
+      MYSQL_PASSWORD: "0000"
+    image: mysql:5.6
+    ports:
+      - "3306:3306"

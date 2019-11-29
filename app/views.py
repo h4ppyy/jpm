@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .forms import PostForm
 
 def index(request):
   post = [1,2,3,4,5,6]
@@ -14,7 +14,9 @@ def post(request, id):
 
 
 def manage(request):
+  form = PostForm()
   context = {}
+  context['form'] = form
   return render(request, 'app/manage.html', context)
 
 
